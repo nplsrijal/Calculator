@@ -7,35 +7,36 @@
     tools:content=".MainActivity"
 
     >
+
     <LinearLayout
+        android:paddingTop="50dp"
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
-
-
-        <Button
-            android:id="@+id/btnadd"
-            android:layout_width="102dp"
+        <TextView
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="+" />
-
-        <Button
-            android:id="@+id/btnsub"
-            android:layout_width="102dp"
-            android:layout_height="wrap_content"
-            android:text="-" />
-        <Button
-            android:id="@+id/btnmult"
-            android:layout_width="102dp"
-            android:layout_height="wrap_content"
-            android:text="*" />
-
-        <Button
-            android:id="@+id/btndivide"
-            android:layout_width="102dp"
-            android:layout_height="wrap_content"
-            android:text="/" />
+            android:text="Simple Calculator"
+            android:textAlignment="center"/>
 
     </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+        <TextView
+            android:paddingTop="20dp"
+            android:id="@+id/inputval"
+            android:layout_width="310dp"
+            android:layout_height="wrap_content"
+            android:text="0"
+           />
+        <Button
+            android:id="@+id/btnclearlast"
+            android:layout_width="95dp"
+            android:layout_height="wrap_content"
+            android:text="⌫" />
+    </LinearLayout>
+
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
@@ -57,6 +58,13 @@
             android:layout_width="102dp"
             android:layout_height="wrap_content"
             android:text="9" />
+
+        <Button
+            android:id="@+id/btndivide"
+            android:layout_width="102dp"
+            android:layout_height="wrap_content"
+            android:text="/" />
+
 
 
 
@@ -86,6 +94,11 @@
             android:layout_width="102dp"
             android:layout_height="wrap_content"
             android:text="6" />
+        <Button
+            android:id="@+id/btnmult"
+            android:layout_width="102dp"
+            android:layout_height="wrap_content"
+            android:text="*" />
 
 
 
@@ -113,6 +126,12 @@
             android:layout_height="wrap_content"
             android:text="3" />
 
+        <Button
+            android:id="@+id/btnsub"
+            android:layout_width="102dp"
+            android:layout_height="wrap_content"
+            android:text="-" />
+
 
 
     </LinearLayout>
@@ -139,6 +158,25 @@
             android:layout_height="wrap_content"
             android:text="C" />
 
+        <Button
+            android:id="@+id/btnadd"
+            android:layout_width="102dp"
+            android:layout_height="wrap_content"
+            android:text="+" />
+
+
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+        <Button
+            android:id="@+id/btncalc"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="=" />
 
 
     </LinearLayout>
